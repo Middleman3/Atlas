@@ -1,14 +1,14 @@
 package mock;
 
-import itf.Request;
+import atlas.Model;
 
 import static mock.Mock.callSuccess;
 
-public class MockRequest implements Request
+public class MockModel implements Model
 {
 
     @Override
-    public Object get(String userId)
+    public Object get(String key)
     {
         callSuccess(0);
         return false;

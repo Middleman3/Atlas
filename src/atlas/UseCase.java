@@ -1,8 +1,5 @@
 package atlas;
 
-import itf.Request;
-import itf.UseCase;
-
 /**
  * atlas._UseCase implements the Bridge and Command patterns.
  * The Business Rules in atlas.UseCases are specific
@@ -11,7 +8,7 @@ import itf.UseCase;
  * In other words, the step of creating atlas._UseCase objects
  * is performed after Atlas.generateMVC() has been called.
  *
- * atlas._UseCase objects interact with atlas._Entity objects in a
+ * atlas._UseCase objects interact with atlas.Models._Entity objects in a
  * controlling way.
  *
  * atlas._UseCase objects comprise the Application Layer.
@@ -27,21 +24,9 @@ import itf.UseCase;
  *      FOR EACH COMPONENT of the application (database, web,
  *      additional frameworks) and it has access to all
  *      necessary entities.
- *
- *
- *
  */
-public class _UseCase implements UseCase {
 
-
-    @Override
-    public void execute()
-    {
-
-    }
-
-    @Override
-    public boolean receiveRequest(Request request) {
-        return false;
-    }
+public interface UseCase extends InputBoundary
+{
+    void execute();
 }

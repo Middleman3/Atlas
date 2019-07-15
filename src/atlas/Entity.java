@@ -1,7 +1,7 @@
 package atlas;
 
 /**
- * The atlas._Entity is a Domain Model object. It is the
+ * The atlas.Models._Entity is a Domain Model object. It is the
  * building block of the application. Examples of
  * atlas.Entities are  objects. As a rule of thumb, if you take two
  * very different applications, yet they have a few similar
@@ -16,7 +16,7 @@ package atlas;
  * The atlas._UseCase is the Bridge between the Domain Layer
  * atlas.Entities, and everything else.
  */
-public class _Entity
+public interface Entity
 {
 
 }

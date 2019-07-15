@@ -1,19 +1,12 @@
 package mock;
 
-
+import atlas.InputBoundary;
 import atlas.Model;
-import atlas.UseCase;
 
 import static mock.Mock.callSuccess;
 
-public class MockUseCase implements UseCase {
-
-
-    @Override
-    public void execute() {
-
-    }
-
+public class MockMechanism implements InputBoundary
+{
     @Override
     public boolean accept(Model model) {
         callSuccess(0);
